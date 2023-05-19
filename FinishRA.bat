@@ -8,7 +8,7 @@ set /p build=Type in the build number, e.g.: 45.0.46
 start /b /wait python prepare_RA_folders.py --path=%folder% --project=Moldflow
 echo muilt-language lpu files done copying
 echo start removing extra languages from lpu, this may take a while...
-for %%i in (chs, cht, fra, deu, ita,jpn,kor,ptg,esn) do pslcmd.exe /openproject:%folder%\%%i\CurrentReleaseLpu\%%i_All_Moldflow.lpu /runmacro=Remove_langs_from_project.bas & pslcmd.exe /openproject:%folder%\%%i\LastReleaseLpu\%%i_All_Moldflow.lpu /runmacro=Remove_langs_from_project.bas
+for %%i in (chs,cht,fra,deu,ita,jpn,kor,ptg,esn) do pslcmd.exe /openproject:%folder%\%%i\CurrentReleaseLpu\%%i_All_Moldflow.lpu /runmacro=Remove_langs_from_project.bas & pslcmd.exe /openproject:%folder%\%%i\LastReleaseLpu\%%i_All_Moldflow.lpu /runmacro=Remove_langs_from_project.bas
 echo all the extra languages have been successfully removed from lpus, and mapping files have been created
 echo you can go and check before proceeding to create creating for_review lpus
 pause

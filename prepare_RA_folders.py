@@ -21,9 +21,19 @@ Nastran_lan_list = ["chs",
                     "jpn",
                     "kor"]
 
+CFD_lan_list = ["chs",
+                "cht",
+                "fra",
+                "deu",
+                "ita",
+                "jpn",
+                "kor",
+                "rus"]
+
 lan_list_dict = {
     "Moldflow": Moldflow_lan_list,
-    "Nastran": Nastran_lan_list
+    "Nastran": Nastran_lan_list,
+    "CFD": CFD_lan_list
 }
 
 
@@ -46,6 +56,14 @@ def create_Nastran_mapping_file(parent_folder, lan):
         "LPURENAME	%s_All_Nastran_InCAD	%s_All_Nastran_InCAD" % (lan, lan))
     file.close()
 
+def create_CFD_mapping_file(parent_folder, lan):
+    full_path = os.path.join(parent_folder, "mapping.txt")
+    file = open(full_path, "w")
+    file.write(
+        "ACTION	PREVIOUS LPU NAME	CURRENT LPU NAME	PREVIOUS SRCLST NAME	CURRENT SRCLST NAME		\n")
+    file.write(
+        "LPURENAME	%s_All_CFD360	%s_All_CFD360" % (lan, lan))
+    file.close()
 
 if __name__ == '__main__':
 
@@ -74,6 +92,8 @@ if __name__ == '__main__':
             create_Moldflow_mapping_file(new_folder, lan)
         elif project == "Nastran":
             create_Nastran_mapping_file(new_folder, lan)
+        elif project == "CFD":
+            create_CFD_mapping_file(new_folder, lan)
 
         for filename in os.listdir(target_folder):
             if filename.startswith("old"):

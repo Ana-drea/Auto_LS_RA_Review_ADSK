@@ -3,15 +3,15 @@ import shutil
 import sys
 import argparse
 
-# Moldflow_lan_list = ["chs",
-#                      "cht",
-#                      "fra",
-#                      "deu",
-#                      "ita",
-#                      "jpn",
-#                      "kor",
-#                      "ptg",
-#                      "esn"]
+Moldflow_lan_list = ["chs",
+                     "cht",
+                     "fra",
+                     "deu",
+                     "ita",
+                     "jpn",
+                     "kor",
+                     "ptg",
+                     "esn"]
 
 LSR_tool_folder = r"C:\tools\LSReview"
 
