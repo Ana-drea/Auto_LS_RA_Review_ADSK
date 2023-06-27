@@ -1,0 +1,16 @@
+在新机器（cloudPC）上跑RA:
+1把我写的脚本整个文件夹挪过去
+2.cSmoke整个挪过去，并添加到环境参数
+3.装perl
+4.装perl的XML::DOM模块，方式是命令行cpan，进入cpan界面之后install XML::DOM
+5.装ADSK VPN否则无法连接passolo server，用以下任意的server:
+VPN:
+Default: https://secure.autodesk-cn.net/port
+VPN Server:
+US West: https://maui.autodesk.com/port
+US East: https://bigisland.autodesk.com/port
+EMEA: https://kauai.autodesk.com/port
+APAC: https://oahu.autodesk.com/port
+China: https://molokai.autodesk.com/port
+
+6.装passolo 2018，添加到环境参数，并连接到最新server

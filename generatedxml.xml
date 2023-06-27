@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <smoketestresult>
-<buildinfo prod="SIM360_CFD" year="2024" lang="RUS" build="1839"/>
+<buildinfo prod="NSTRN" year="2024" lang="KOR" build="24.1.0.45_RB"/>
 <report testname="RA">
 <runby>ANDREA.ZHOU@RWS.COM</runby>
 <runthrough>Automated/Command-Line</runthrough>
-<datelastrun>2023-05-15-19:28:40</datelastrun>
+<datelastrun>2023-06-26-15:00:58</datelastrun>
 <records/>
 <summary>
-  <reportsummary>Analized 11370 strings.
+  <reportsummary>Analized 3162 strings.
 </reportsummary>
-  <countTotalRecords>11370</countTotalRecords>
+  <countTotalRecords>3162</countTotalRecords>
   <score>100</score>
   <usability>true</usability>
 </summary>
